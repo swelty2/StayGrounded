@@ -1,0 +1,68 @@
+body {
+  background: beige;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 40px;
+  animation: ease-in-out;
+}
+
+
+.container {
+  border: 1px chocolate;
+  padding: 2px;
+  position: relative;
+  width: 300%;
+  max-width: 900px;
+}
+
+.container img {
+  width: 100%;
+  float: left;
+  margin: 2px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 40%;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: saddlebrown;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: saddlebrown;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navBar {
+  display: block;
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  border: black;
+  border-radius: 25px;
+}
+
+.navBox {
+  width: 190px;
+  height: 84px;
+  left: 24px;
+  position:fixed;
+  padding: 50px;
+  display: inline-block; /* ADDED */
+}
+
+.container .btn:hover {
+  background-color: azure;
+}
