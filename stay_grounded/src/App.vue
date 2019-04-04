@@ -6,16 +6,12 @@
 </template>
 
 <script>
-  import welcome from './components/welcome'
     export default {
         name: "App",
         data() {
           return {
             title : 'Stay Grounded - A unique experience for coffee lovers'
           }
-        },
-        components: {
-          welcome
         }
     }
 </script>
