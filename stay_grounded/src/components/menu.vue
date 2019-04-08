@@ -1,47 +1,76 @@
 <template>
-  <div class="container">
-    <h3>{{ title }}</h3>
-    <!--Accordion wrapper-->
-    <div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist"   v-for="drink in drinks">
-      <div class="card">
-        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
-          <h5 class="text-uppercase mb-0 py-1">
-            <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="true"
-               aria-controls="collapse96">
-              {{ drink.drinkName }} | {{ drink.milk}}
-            </a>
-          </h5>
-        </div>
-        <div id="collapse96" class="collapse show" role="tabpanel" aria-labelledby="heading96" data-parent="#accordionEx23">
-          <div class="card-body">
-            <div class="row my-4">
-              <div class="col-md-8">
-                <h2 class="font-weight-bold mb-3 black-text">Ingredient</h2>
-               <!--<p class="">
-                  {{ drink.flavor}}
-                  {{ drink.toppings }}-->
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">{{ drink.flavor }}</li>
-                  <li class="list-group-item">{{ drink.toppings }}</li>
-                </ul>
-              <!-- </p> -->
-              </div>
-              <div class="col-md-4 mt-3 pt-2">
-                <div class="view z-depth-1">
-                  <img src="../assets/coffee-bean.jpg" alt="" class="rounded-lg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Back>>Menu - Recipes</h1>
+
+    <hr class="mt-2 mb-5">
+
+    <div class="row text-center text-lg-left">
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/aroma-aromatic-art-434213.jpg" alt="">
+          <router-link to="/brew/Cappuccino" class="figure-caption text-center">Cappuccino</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/mocha-latte.jpg" alt="">
+          <router-link to="/brew/Mocha Latte" class="figure-caption text-center">Mocha Latte</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/mexican-hot-chocolate-recipe.jpg" alt="">
+          <router-link to="/brew/Hot Chocolate" class="figure-caption text-center">Hot Chocolate</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/americano.jpg" alt="">
+          <router-link to="/brew/Americano" class="figure-caption text-center">Americano</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/chai-latte.jpg" alt="">
+          <router-link to="/brew/Chai Latte" class="figure-caption text-center">Chai Latte</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/green-tea.png" alt="">
+          <router-link to="/brew/Green Tea Latte" class="figure-caption text-center">Green Tea Latte</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/herbal-tea.jpg" alt="">
+          <router-link to="/brew/Herbal Tea" class="figure-caption text-center">Herbal Tea</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/herbal-mint-tea.jpg" alt="">
+          <router-link to="/brew/Mint Tea" class="figure-caption text-center">Mint Tea</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/lemonade.jpg" alt="">
+          <router-link to="/brew/Lemonade" class="figure-caption text-center">Lemonade</router-link>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/fresh-smoothies.jpg" alt="">
+          <router-link to="/brew/Seasoned Smoothies" class="figure-caption text-center">Seasoned Smoothies</router-link>
+        </a>
+      </div>
     </div>
-    <!--Accordion wrapper-->
-    <dl class="dl-horizontal" v-for="drink in drinks">
-      <dt>{{ drink.drinkName }}</dt>
-      <dd>{{ drink.drinkType }} - {{drink.flavor}}</dd>
-    </dl>
+
   </div>
 
 </template>

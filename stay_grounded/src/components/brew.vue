@@ -1,17 +1,13 @@
 <template>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
         <h3>Actions</h3>
         <div class="list-group">
           <a class="list-group-item clearfix" onclick="alert('Action1 -> Details');">
             Action1
-            <!--<span class="pull-right">
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); event.stopPropagation();">
-                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        </span>
-                    </span>-->
+
           </a>
           <a class="list-group-item clearfix" onclick="alert('Action2 -> Details');">
             Action2
@@ -23,9 +19,6 @@
         <rect v-bind:width="width" v-bind:height="height" v-bind:x="x" v-bind:key="y" fill="#f0b375"/>
       </svg>
 
-      <div class="col-md-8">
-        <h3>Settings</h3>
-      </div>
     </div>
   </div>
 </template>

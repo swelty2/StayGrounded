@@ -6,15 +6,17 @@ import home from './components/home'
 import welcome from './components/welcome'
 import menu from './components/menu'
 import brew from './components/brew'
+import design from './components/design'
 
 Vue.use(Router);
 
 const routes = [
   { path : '/', component: welcome },
   { path: '/home', component: home},
-  { path: '/home/:userName', name: 'home', component: home},
+  { path: '/home/:userName', component: home},
   { path: '/menu', component: menu},
-  { path: '/brew', component: brew}
+  { path: '/brew/:drinkName', component: brew},
+  { path: '/buildDrink', component: design}
 ];
 
 const router = new Router({
