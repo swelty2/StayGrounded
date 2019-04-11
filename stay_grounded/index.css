@@ -1,3 +1,59 @@
+<<<<<<< HEAD
+html, body{
+  height: 100%;
+  margin: 0 auto;
+  background-color: #faebd7;
+}
+nav{
+    background-color: #444;
+    margin-bottom:50px;
+    width: 100%;
+}
+nav ul{
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+nav ul li{
+    display:inline-block;
+    list-style-type: none;
+}
+nav ul li a{
+    color:#C0C0C0;
+    display:block;
+    text-decoration: none;
+    font-family:arial;
+    padding:10px;
+}
+nav ul li a a{
+  text-decoration: none !important;
+}
+nav ul li a:active{
+  color: white;
+}
+nav ul li a:hover{
+   color:white;
+}
+.active{
+  color: white;
+}
+
+.content-row{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+#logo img{
+  width: 400px !important;
+  margin-top:100px;
+  
+}
+#logo{
+  margin-top:50px;
+  margin: 0 auto;
+}
+h4{
+=======
 
 
 
@@ -50,21 +106,174 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+>>>>>>> refs/remotes/origin/master
   text-align: center;
-  color: #2c3e50;
-  margin-top: 40px;
-  animation: ease-in-out;
 }
 
+#explore{
+  margin-top:50px;
+}
+#explore button{
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    background-color: red;
+    text-decoration: none;
+    border-color: white;
 
+}
+#explore button a{
+  color: white !important;
+  text-decoration:none;
+}
+.form-control{
+  text-align: center;
+  width: 300px;
+}
+#glass{
+    position: absolute;
+    width: 125px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 0 0 1rem 1rem;
+    left: 200px;
+    margin-top: 50px;
+}
+#small-cup{
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  background: #252C32;
+  border: 2px solid black;
+  border-radius: 0 0 5rem 5rem;
+  left: 200px;
+  margin-top:50px;
+}
+#cup {
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 0 0 5rem 5rem;
+  left: 200px;
+  margin-top:50px;
+  z-index: 1;
+}
+#handle {
+  position: absolute;
+  height: 45px;
+  width: 30px;
+  background: transparent;
+  border-radius: 50% 30%;
+  left: 315px;
+  top:25%;
+  z-index: 0;
+  border: 2px solid black;
+}
+#ice-cube-1{
+  height: 25px;
+  width: 25px;
+  background: #e3e4e1;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid #dcf3ff;
+  position: absolute;
+  left: 215px;
+  top: 325px;
+}
+#ice-cube-2{
+  height: 25px;
+  width: 25px;
+  background: #e3e4e1;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid #dcf3ff;
+  position: absolute;
+  left: 250px;
+  top: 325px;
+}
+#ice-cube-3{
+  height: 25px;
+  width: 25px;
+  background: #e3e4e1;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid #dcf3ff;
+  position: absolute;
+  left: 285px;
+  top: 325px;
+}
+#ice-cube-4{
+  height: 25px;
+  width: 25px;
+  background: #e3e4e1;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid #dcf3ff;
+  position: absolute;
+  left: 235px;
+  top: 285px;
+}
+#ice-cube-5{
+  height: 25px;
+  width: 25px;
+  background: #e3e4e1;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid #dcf3ff;
+  position: absolute;
+  left: 275px;
+  top: 290px;
+}
+#straw{
+  height: 225px;
+  width: 15px;
+  background: #134e13;
+  position: absolute;
+  left: 265px;
+  top: 125px;
+  transform: rotate(20deg);
+ -ms-transform: rotate(20deg); /* IE 9 */
+ -webkit-transform: rotate(20deg); /* Safari and Chrome */
+}
+.latte {
+  background: linear-gradient(to bottom, #252C32 5%, #faf0e6 5%, #faf0e6 30%, #CCA26A 30%, #CCA26A 70%, #5c4033 70%);
+}
+.cappucino{
+  background: linear-gradient(to bottom, #252C32 5%, #faf0e6 5%, #faf0e6 45%, #CCA26A 25%, #CCA26A 70%, #5c4033 70%);
+}
+.americano{
+  background: linear-gradient(to bottom, #252C32 5%, #6495ed 5%, #6495ed 70%, #CCA26A 70%, #6f4e37 70%);
+}
+.drip-coffee{
+  background-color: #6f4e37;
+}
+.iced-coffee{
+  background-color: #6f4e37;
+}
+.hidden{
+  display:none;
+}
+.left{
+  width: 40%;
+}
+#nav-logo img{
+   max-height: 20px;
+   margin: 0 auto;
+}
+
+@media (min-width: 992px){
 .container {
-  border: 1px chocolate;
-  padding: 2px;
-  position: relative;
-  width: 300%;
-  max-width: 900px;
+    max-width: none !important;
+}
+}
+.container{
+  padding: 0px !important;
 }
 
+a.link.router-link-exact-active.router-link-active{
+  display: none;
+}
 .container img {
   width: 100%;
   float: left;
@@ -89,23 +298,7 @@ body {
   text-align: center;
 }
 
-.navBar {
-  display: block;
-  position: relative;
-  width: 1000px;
-  height: 200px;
-  border: black;
-  border-radius: 25px;
-}
 
-.navBox {
-  width: 190px;
-  height: 84px;
-  left: 24px;
-  position:fixed;
-  padding: 50px;
-  display: inline-block; /* ADDED */
-}
 
 .container .btn:hover {
   background-color: azure;
