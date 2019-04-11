@@ -5,7 +5,7 @@ html, body{
   background-color: #faebd7 !important;
 }
 nav{
-    background-color: #444;
+    background-color: #fff;
     margin-bottom:50px;
     width: 100%;
 }
@@ -19,7 +19,7 @@ nav ul li{
     list-style-type: none;
 }
 nav ul li a{
-    color:#C0C0C0;
+    color:grey;
     display:block;
     text-decoration: none;
     font-family:arial;
@@ -29,13 +29,13 @@ nav ul li a a{
   text-decoration: none !important;
 }
 nav ul li a:active{
-  color: white;
+  color: black;
 }
 nav ul li a:hover{
-   color:white;
+   color:black;
 }
 .active{
-  color: white;
+  color: black;
 }
 
 .content-row{
@@ -45,19 +45,32 @@ nav ul li a:hover{
 }
 #logo img{
   width: 400px !important;
-  margin-top:50px;
-  
 }
 #logo{
-  margin-top:50px;
   margin: 0 auto;
 }
-h4{
+#logo-small img{
+  max-width: 100px;
+  top:0;
+  right: 0;
+  
+  position: absolute;
+}
+h5{
   text-align: center;
   margin-top:10px;
 }
 
-
+#banner-info{
+  width: 100%;
+    background-color: #cce5ff;
+    padding: 5px;
+    margin: 20px 0px 20px 0px;
+    color: #004085;
+    text-align: center;
+    border-radius: 3px;
+    border-color: #b8daff;
+}
 
 body {
   background: beige;
@@ -73,8 +86,9 @@ body {
   width: 100%;
   height: auto;
 }
-
-
+.container-fluid{
+  padding: 0 !important;
+}
 
 .overlay {
   position: absolute;
@@ -93,7 +107,9 @@ body {
   opacity: 1;
 }
 
-
+.main-content{
+  padding:50px;
+}
 
 
 #explore{
@@ -103,10 +119,13 @@ body {
     border-radius: 5px;
     padding: 10px;
     color: black;
-    background-color: red;
+    background-color: #dc3545;
     text-decoration: none;
     border-color: white;
 
+}
+#explore button:hover{
+  background-color:red;
 }
 #explore button a{
   color: white !important;

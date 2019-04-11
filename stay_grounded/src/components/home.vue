@@ -1,15 +1,22 @@
 <template>
 
   <div class="container-fluid">
-    <img id= 'logo' src=
-      "../assets/logo.png"  alt="Stay Grounded Logo Image" class="image" >
-    <div class="jumbotron">
-
-      <h3 align="display-3">Welcome {{ this.$route.params.userName }}</h3>
-
-      <p> You have a variety of options there!!! Grab one from your past orders ||
-        Explore our menu options || Have some time?? Build your own drink</p>
+  <nav>
+              <ul>
+                
+                <li><a><router-link to="/home/Donna" class="active">Home</router-link></a></li>
+                <li><a><router-link to="/brew/Donna">Brew A Cup</router-link></a></li>
+                <li><a><router-link to="/menu/Donna">Explore the Menu</router-link></a></li>
+              </ul>
+        </nav>
+    <div id="logo-small">
+      <img src="../assets/logo.png"  alt="Stay Grounded Logo Image" class="image" >
     </div>
+    <div class="banner-info">
+
+      <h5>Welcome {{ this.$route.params.userName }}!</h5>
+    </div>
+    <div class="main-content">
     <div class="row">
       <div class="col-md-4">
         <h2>Order History</h2>
@@ -51,6 +58,7 @@
         <p><router-link class="btn btn-outline-success my-2 my-sm-0" to="/menu" role="button">More Details >></router-link> </p>
         <router-view></router-view>
       </div>
+    </div>
     </div>
   </div>
 </template>

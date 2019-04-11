@@ -18,7 +18,7 @@
           </div>
       </div>
       
-      <h4> What's in your cup?</h4>
+      <h5> A Curated Coffee Experience</h5>
       <br/>
       
       <div class="content-row" id="login-info">
@@ -26,7 +26,7 @@
             
               
               <label class="sr-only">User Name</label>
-              <input v-model="userName" class="form-control" id="userName" placeholder="Enter Your Name To Explore">
+              <input v-model="userName" class="form-control" id="userName" placeholder="Enter Your Name">
             
           </form>
           
@@ -35,8 +35,6 @@
       <div class="content-row" id="explore">
             <button><router-link class="explore-button"  to="/home/Donna">Click to Explore</router-link></button>
       </div>
-      
-          
       
       
       
