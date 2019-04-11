@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   
     <div class="container">
     <!-- NAVBAR -->
@@ -15,7 +14,7 @@
       <!-- LOGO -->
       <div class="content-row">
           <div id="logo">
-              <img src="../assets/stay-grounded-logo.png">
+              <img src="../assets/logo.png">
           </div>
       </div>
       
@@ -48,41 +47,19 @@
         <figcaption class="figure-caption text-center">Freshly brewed</figcaption>
       </figure>-->
     </div>
-=======
-
-  <div class="container">
-    <img src=
-           "../assets/logo.jpg"  alt="Stay Grounded Logo Image" class="image" >
-    <div class="middle">
-      <div class="text">
-        <router-link class="text"  to="/home/Donna">Explore</router-link>
-        <router-view></router-view></div>
-    </div>
-  </div>
->>>>>>> refs/remotes/origin/master
 
 </template>
 
 <script>
-<<<<<<< HEAD
     export default {
         name: "welcome",
         data() {
           return {
-            userName: ''
+            userName: '',
+            title: 'welcome',
           }
         }
-=======
-  export default {
-    name: "welcome",
-    data() {
-      return {
-        userName: '',
-        title : 'Stay Grounded - A unique experience'
-      }
->>>>>>> refs/remotes/origin/master
     }
-  }
 </script>
 
 <style scoped>

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 html, body{
   height: 100%;
   margin: 0 auto;
-  background-color: #faebd7;
+  background-color: #faebd7 !important;
 }
 nav{
     background-color: #444;
@@ -45,7 +45,7 @@ nav ul li a:hover{
 }
 #logo img{
   width: 400px !important;
-  margin-top:100px;
+  margin-top:50px;
   
 }
 #logo{
@@ -53,7 +53,9 @@ nav ul li a:hover{
   margin: 0 auto;
 }
 h4{
-=======
+  text-align: center;
+  margin-top:10px;
+}
 
 
 
@@ -91,24 +93,8 @@ body {
   opacity: 1;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
->>>>>>> refs/remotes/origin/master
-  text-align: center;
-}
+
+
 
 #explore{
   margin-top:50px;
@@ -347,13 +333,7 @@ a.link.router-link-exact-active.router-link-active{
   padding: 16px 32px;
 }
 
-#logo {
-  height: 100%;
-  width: 20%;
-  display: inline-block;
-  float: left;
 
-}
 .jumbotron {
   padding: 4rem 2rem;
 }

@@ -10,7 +10,7 @@
         name: "App",
         data: {
          // return {
-            title : 'Stay Grounded - A unique experience for coffee lovers'
+            title : 'Stay Grounded'
           //}
         },
         template: '<div>{{ title }}</div>'

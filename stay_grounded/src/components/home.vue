@@ -2,7 +2,7 @@
 
   <div class="container-fluid">
     <img id= 'logo' src=
-      "../assets/logo.jpg"  alt="Stay Grounded Logo Image" class="image" >
+      "../assets/logo.png"  alt="Stay Grounded Logo Image" class="image" >
     <div class="jumbotron">
 
       <h3 align="display-3">Welcome {{ this.$route.params.userName }}</h3>
