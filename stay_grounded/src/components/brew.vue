@@ -1,55 +1,72 @@
 <template>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Actions</h3>
-        <div class="list-group">
-          <a class="list-group-item clearfix" onclick="alert('Action1 -> Details');">
-            Action1
-
-          </a>
-          <a class="list-group-item clearfix" onclick="alert('Action2 -> Details');">
-            Action2
-          </a>
-        </div>
-      </div>
-
-      <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" id="chart">
-        <rect v-bind:width="width" v-bind:height="height" v-bind:x="x" v-bind:key="y" fill="#f0b375"/>
-      </svg>
-
+  <div id="brewTable">
+    <b-alert show variant="success">
+      <h4 class="alert-heading">We are brewing.Please wait!!! Scroll down for some fun facts</h4>
+    </b-alert>
+    <div class="intbox leftTopBox">
+        <h3 class="alert-heading">Your drink is getting ready</h3>
+        <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
+    </div>
+    <div class="intbox leftBottomBox">
+      <h2>Sarah to include to coffee cup pages here.</h2>
+      <coffee-chart></coffee-chart>
+    </div>
+    <div class="intbox rightTopBox">
+      <coffee-chart></coffee-chart>
+    </div>
+      <div class="intbox rightBottomBox">
+        <tea-chart></tea-chart>
     </div>
   </div>
 </template>
 
 <script>
-  import VueP5 from 'vue-p5'
-    export default {
-        name: "brew",
-        data() {
-          return {
-            width: 200,
-            height: 200,
-            x: 10,
-            y: 10
-          }
-        },
-        created: {
-        setup(sketch) {
-          sketch.background('green');
-          sketch.text('Hello p5!', 20, 20);
-        }
+  import VueP5 from "vue-p5";
+  import coffeeChart from '../components/coffee-chart'
+  import teaChart from '../components/tea-chart'
+  export default {
+    name: "p5-example",
+    components: {
+      "vue-p5": VueP5,
+      coffeeChart,
+      teaChart
+    },
+    data: () => ({
+       yoff : 0.0,
+       xoff : 0,
+       width : 310,
+       height : 400
+    }),
+    methods: {
+      sketch(sketch) {
+        sketch.draw = () => {
+        };
       },
-      render(h) {
-        return h(VueP5, {on: this});
+      setup(sketch) {
+        sketch.createCanvas(this.width, this.height);
+        sketch.fill(255);
+        sketch.stroke(200);
+      },
+      draw(sketch) {
+        sketch.beginShape();
+        let c = sketch.color('brown');
+        sketch.fill(c);
+        // Iterate over horizontal pixels
+        for (let x = 0; x <= this.width; x += 10) {
+          // Calculate a y value according to noise, map to
+          // 2D Noise
+          let y = sketch.map(sketch.noise(this.xoff, this.yoff), 0, 1, 100,200);
+          // Set the vertex
+          sketch.vertex(x, y);
+          // Increment x dimension for noise
+          this.xoff += 0.05;
+        }
+        // increment y dimension for noise
+        this.yoff += 0.01;
+        sketch.vertex(this.width, this.height);
+        sketch.vertex(0, this.height);
+        sketch.endShape(sketch.CLOSE);
       }
-
     }
-
-
+  };
 </script>
-
-<style scoped>
-
-</style>
