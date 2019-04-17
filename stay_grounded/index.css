@@ -53,7 +53,7 @@ nav ul li a:hover{
   max-width: 100px;
   top:0;
   right: 0;
-  
+
   position: absolute;
 }
 h5{
@@ -357,6 +357,112 @@ a.link.router-link-exact-active.router-link-active{
   padding: 4rem 2rem;
 }
 .jumbotron p {
+}
+
+
+/* Split the screen in half */
+.split {
+  height: 150%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+/* Control the left side */
+.left {
+  left: 5px;
+  top: 80px;
+  right: 2px;
+  background-color: azure;
+}
+
+/* Control the right side */
+.right {
+  right: 5px;
+  top: 80px;
+  background-color: lightyellow;
+}
+
+#brewTable {
+  width: 100%;
+  height: 100px;
+  display: inline-table;
+}
+
+.leftTopBox {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: inline-block;
+}
+
+.intbox {
+  width: 50%;
+  height: 30%;
+  display: inline-block;
+}
+
+.rightTopBox {
+  background-color:cadetblue;
+  margin:auto;
+  text-align:center;
+
+}
+
+.leftBottomBox {
+  background-color:lightpink;
+  margin:auto;
+  text-align:center;
+  color:#FFFFFF;
+}
+
+.rightBottomBox {
+  background-color:#000000;
+  margin:auto;
+  text-align:center;
+  color:#FFFFFF;
+}
+
+.white-circle {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 8px #d8dbe3;
+  border-radius: 100px;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.white-circle:hover {
+  box-shadow: 0 0 8px #007dbc;
+}
+
+.white-circle img {
+  position: relative;
+  top: 18px;
+}
+
+.audio-control {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-align: center;
+}
+
+
+canvas {
+  height: 100px;
+  width: 100vw;
+  margin-top: -50px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: -1;
 }
 
 
