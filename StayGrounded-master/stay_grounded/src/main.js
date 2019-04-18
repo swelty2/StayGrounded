@@ -11,7 +11,9 @@ import brew from './components/brew'
 import design from './components/design'
 import data from './components/data'
 import speechform from './components/speechform'
+import Carousel from 'bootstrap-vue/es/components/carousel'
 
+Vue.use(Carousel)
 
 Vue.use(Router);
 Vue.component('apexchart', VueApexCharts);

@@ -6,7 +6,7 @@
     <nav>
       <ul>
        
-        <li><a><router-link to="/home/Donna">Home</router-link></a></li>
+        <li><a><router-link to="/home/">Home</router-link></a></li>
         <li><a><router-link to="/data"> Data</router-link></a></li>
 
         <li><a><router-link to="/menu">Brew A Cup</router-link></a></li>
@@ -25,9 +25,9 @@
           <i class="material-icons">
 insert_chart
 </i>
-<p><h2>Bean Stats</h2>
+<h2>Bean Stats</h2>
 </router-link> 
-          </p>
+
           
         </b-col>
 
@@ -39,9 +39,9 @@ insert_chart
           <i class="material-icons">
 build
 </i>
-<p><h2>Build A Drink</h2>
+<h2>Build A Drink</h2>
 </router-link> 
-          </p>
+
           
         </b-col>
 
@@ -52,9 +52,9 @@ build
           <router-link class="btn btn-outline-success my-2 my-sm-0" to="/speechform" role="button">
           <i class="material-icons">
 local_drink</i>
-<p><h2>Get Nutrition Info</h2>
+<h2>Get Nutrition Info</h2>
 </router-link> 
-          </p>
+
           
         </b-col>
 
@@ -78,15 +78,6 @@ local_drink</i>
       }
     },
     methods: {
-    },
-    created(){
-      console.log(this.$route.params.userName);
-      for(let i=0; i<= users.length; i++){
-        console.log('User Input :', users[i]);
-        if(this.$route.params.userName === users[i].userName){
-          this.user = users[i];
-        }
-      }
     }
   }
 </script>

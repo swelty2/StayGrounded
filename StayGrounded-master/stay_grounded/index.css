@@ -12,7 +12,6 @@ html, body{
 nav{
     /*background-color: #faebd7;*/
     background-color: saddlebrown;
-    margin-bottom:50px;
     width: 100%;
 }
 nav ul{
@@ -51,7 +50,7 @@ nav ul li a:hover{
   justify-content: center;
 }
 #logo img{
-  width: 200px; !important;
+  width: 300px; !important;
 }
 #centerContainer {
     width: 100%;
@@ -59,7 +58,7 @@ nav ul li a:hover{
 }
 #centerContainer #logo{
   margin: 0 auto;
-  width: 60%; !important;
+  width: 40%; !important;
 }
 
 div#centerContent div {
