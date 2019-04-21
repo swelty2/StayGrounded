@@ -47,7 +47,7 @@
     </div>
 
     <div class="content-row" id="explore">
-      <button><router-link class="explore-button"  to="/home">Click to Explore</router-link></button>
+      <router-link class="explore-button"  to="/home">Click to Explore</router-link>
 
     </div>
 

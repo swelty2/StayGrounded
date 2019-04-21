@@ -5,7 +5,7 @@
             <ul>
                 <li><a><router-link to="/home/Donna">Home</router-link></a></li>
                 <li><a><router-link to="/data"> Data</router-link></a></li>
-                <li><a><router-link to="/menu">Brew A Cup</router-link></a></li>
+                <li><a><router-link to="/builddrink">Brew A Cup</router-link></a></li>
                 <li><a><router-link to="/speechform">Voice Order</router-link></a></li>
             </ul>
         </nav>
@@ -14,6 +14,9 @@
                 style="max-width: 100rem;"
                 class="mb-2">
         </b-card>
+
+
+
         <router-link to="/brew">Brew my Drink</router-link>
 
         <!--<brew></brew>-->

@@ -1,7 +1,10 @@
 <template>
 
+  <vue-p5 id="vueBrew"  @sketch="sketch" @setup="setup" @draw="draw">
 
-  <vue-p5 id="centerContainer" @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
+
+
+  </vue-p5>
 </template>
 
 <script>
