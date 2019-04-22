@@ -511,6 +511,104 @@ canvas {
 
 
 }
+/* Lexbot Styling*/
+input#wisdom {
+  padding: 4px;
+  font-size: 1em;
+  width: 400px
+}
+
+input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+p.userRequest {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  min-width: 50%;
+  max-width: 85%;
+  float: left;
+  background-color: #7d7;
+}
+
+p.lexResponse {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 50%;
+  max-width: 85%;
+  float: right;
+  background-color: #bbf;
+  font-style: italic;
+}
+
+p.lexError {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 50%;
+  max-width: 85%;
+  float: right;
+  background-color: #f77;
+}
+
+.white-circle {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 8px #d8dbe3;
+  border-radius: 100px;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.white-circle:hover {
+  box-shadow: 0 0 8px #007dbc;
+}
+
+.white-circle img {
+  position: relative;
+  top: 18px;
+}
+
+.audio-control {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-align: center;
+}
+
+
+canvas {
+  height: 100px;
+  width: 100vw;
+  margin-top: -50px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  max-height: fit-content;
+border: black;
+}
+
+.audio-control1 {
+
+}
+
+.audio-control2 {
+
+}
+
+.audio-control3 {
+
+}
 
 
 

@@ -10,7 +10,7 @@
         <li><a><router-link to="/data"> Data</router-link></a></li>
 
         <li><a><router-link to="/builddrink">Brew A Cup</router-link></a></li>
-        <li><a><router-link to="/speechform">Voice Order</router-link></a></li>
+        <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
       </ul>
     </nav>
     <div id= 'centerContainer'> 
@@ -35,7 +35,7 @@ insert_chart
        <b-col md="3">
           
           
-          <router-link class="btn btn-outline-success my-2 my-sm-0" to="/menu" role="button">
+          <router-link class="btn btn-outline-success my-2 my-sm-0" to="/brew" role="button">
           <i class="material-icons">
 build
 </i>
@@ -49,7 +49,7 @@ build
      <b-col md="3">
           
           
-          <router-link class="btn btn-outline-success my-2 my-sm-0" to="/speechform" role="button">
+          <router-link class="btn btn-outline-success my-2 my-sm-0" to="/lexbot" role="button">
           <i class="material-icons">
 local_drink</i>
 <h2>Get Nutrition Info</h2>

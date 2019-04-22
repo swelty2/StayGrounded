@@ -19,14 +19,13 @@
             teaChart
         },
         data: () => ({
-            yoff : 2.25,
-            xoff : 2.75,
+            yoff : 1,
+            xoff : 1,
             width : 600,
             height : 700,
-            drinkWidth : 325,
-            drinkHeight : 625,
-            xAxis: 3,
-            yAxis: 3
+            drinkWidth : 225,
+            drinkHeight : 625
+
         }),
         methods: {
             sketch(sketch) {
@@ -42,12 +41,12 @@
             },
             draw(sketch) {
                 sketch.push();
-                sketch.ellipse(35, 80, 60, 60);
-                sketch.ellipse(95, 80, 60, 60);
-                sketch.ellipse(150, 80, 60, 60);
-                sketch.ellipse(200, 80, 60, 60);
-                sketch.ellipse(250, 80, 60, 60);
-                sketch.ellipse(300, 80, 45, 60);
+                sketch.ellipse(35, 80, 370, 60);
+                //sketch.ellipse(95, 80, 60, 60);
+                //sketch.ellipse(150, 80, 60, 60);
+                //sketch.ellipse(200, 80, 60, 60);
+                //sketch.ellipse(250, 80, 60, 60);
+                //sketch.ellipse(300, 80, 45, 60);
                 // sketch.pop();
                 // sketch.push();
                 sketch. translate(350, 160);

@@ -10,7 +10,7 @@
         <li><a><router-link to="/data"> Data</router-link></a></li>
 
         <li><a><router-link to="/brew">Brew A Cup</router-link></a></li>
-        <li><a><router-link to="/speechform">Voice Order</router-link></a></li>
+        <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
       </ul>
     </nav>
 
