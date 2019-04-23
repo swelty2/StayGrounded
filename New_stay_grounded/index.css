@@ -1,4 +1,4 @@
-/*-------- ALPHABETIZED BY ID ----------*/
+/*-------------------- ALPHABETIZED BY ID ------------------*/
 #banner-info {
 background-color:#cce5ff;
 border-color:#b8daff;
@@ -46,9 +46,9 @@ text-align:center;
 }
 #design-content{
   margin:0 auto;
-  margin-top:100px;
+  margin-top:150px;
   margin-bottom:50px;
-  min-height:600px;
+  height: 100vh;
 }
 #design-content .btn-outline-danger a{
   text-decoration:none;
@@ -159,9 +159,13 @@ width:25px;
 z-index:1;
 }
 
+#logo-welcome img{
+  width:500px;
+  margin-top:100px;
+}
 #logo img {
 margin-top:50px;
-width:300px!important;
+width:300px;
 }
 
 #logo-small img {
@@ -207,9 +211,8 @@ width:15px;
 margin-top:60px;
 }
 
-/*--------- ALPHABETIZED BY CLASS -----------*/
+/*---------------------- ALPHABETIZED BY CLASS -----------------------------*/
 .americano {
-background:linear-gradient(tobottom,#252C325%,#6495ed5%,#6495ed70%,#CCA26A70%,#6f4e3770%);
 }
 
 .audio-control {
@@ -221,7 +224,7 @@ text-align:center;
 top:50%;
 }
 .brew-content{
-  min-height:800px;
+  height:100vh;
 }
 
 .cappucino {
@@ -428,7 +431,7 @@ top:18px;
 box-shadow:0 0 8px #007dbc;
 }
 
-/*---------- ALPHABETIZED BY ElEMENT ---------*/
+/*----------------------- ALPHABETIZED BY ElEMENT ---------------------*/
 a.brew-button {
   text-decoration: none;
   padding: 10px;

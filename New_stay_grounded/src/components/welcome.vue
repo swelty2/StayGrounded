@@ -27,7 +27,7 @@
     
     <!-- LOGO -->
     <div class="content-row">
-      <div id="logo">
+      <div id="logo-welcome">
         <img src="../assets/logo.png">
       </div>
     </div>
