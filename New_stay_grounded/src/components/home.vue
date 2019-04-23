@@ -19,7 +19,7 @@
            </div>
          </div>
         <div id="home-content">
-              
+            <h1>Choose from the following options:</h1>
             <!-- BEAN DATA -->
             <router-link class="btn btn-outline-danger option" to="/data" role="button">        
                 <img src="../assets/data.png">
@@ -38,7 +38,6 @@
                 <h2>Voice Order</h2>
              </router-link> 
   
-        
         </div>
       </div>
    </b-container>
