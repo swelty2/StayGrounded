@@ -31,8 +31,9 @@
                  </router-link> 
             </div>
         </div>
-        <router-link class="brew-button" to="/brew" >Brew my Drink</router-link>
-
+        <div class="content-row" id="explore">
+            <router-link class="brew-button" to="/brew" >Brew my Drink</router-link>
+        </div>
     </b-container>
 </template>
 

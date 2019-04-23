@@ -5,7 +5,6 @@
 
         <li><a><router-link to="/home/Donna">Home</router-link></a></li>
         <li><a><router-link to="/data"> Data</router-link></a></li>
-
         <li><a><router-link to="/menu">Brew A Cup</router-link></a></li>
         <li><a><router-link to="/speechform">Voice Order</router-link></a></li>
       </ul>
@@ -97,7 +96,7 @@
 <script>
   import menu from '../data/menu'
     export default {
-        name: "menu",
+        name: "coffee-menu",
         data() {
           return {
             title: "Recipe Index",

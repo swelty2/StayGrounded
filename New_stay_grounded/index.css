@@ -1,3 +1,4 @@
+/*-------- ALPHABETIZED BY ID ----------*/
 #banner-info {
 background-color:#cce5ff;
 border-color:#b8daff;
@@ -44,24 +45,6 @@ text-align:center;
 }
 #explore {
 margin-top:50px;
-}
-
-#explore button {
-background-color:#dc3545;
-border-color:#FFF;
-border-radius:5px;
-color:#000;
-padding:10px;
-text-decoration:none;
-}
-
-#explore button a {
-color:#FFF!important;
-text-decoration:none;
-}
-
-#explore button:hover {
-background-color:red;
 }
 
 #glass {
@@ -194,6 +177,7 @@ width:15px;
 margin-top:60px;
 }
 
+/*--------- ALPHABETIZED BY CLASS -----------*/
 .americano {
 background:linear-gradient(tobottom,#252C325%,#6495ed5%,#6495ed70%,#CCA26A70%,#6f4e3770%);
 }
@@ -206,9 +190,12 @@ position:fixed;
 text-align:center;
 top:50%;
 }
+.brew-button{
+
+}
 
 .cappucino {
-background:linear-gradient(tobottom,#252C325%,#faf0e65%,#faf0e645%,#CCA26A25%,#CCA26A70%,#5c403370%);
+background:linear-gradient(tobottom,#252C325,#faf0e65,#faf0e645%,#CCA26A25%,#CCA26A70%,#5c403370%);
 }
 
 .container {
@@ -409,6 +396,30 @@ top:18px;
 
 .white-circle:hover {
 box-shadow:0 0 8px #007dbc;
+}
+
+/*---------- ALPHABETIZED BY ElEMENT ---------*/
+a.brew-button {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #67564e;
+  color: #fff;
+}
+a.brew-button:hover {
+  background-color: #8b4513;
+}
+a.explore-button {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #67564e;
+  color: #fff;
+}
+a.explore-button:hover{
+  background-color: #8b4513;
 }
 
 body {

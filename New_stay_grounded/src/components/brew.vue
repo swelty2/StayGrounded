@@ -1,8 +1,7 @@
 <template>
 
   <vue-p5 id="vueBrew"  @sketch="sketch" @setup="setup" @draw="draw">
-
-
+    
 
   </vue-p5>
 </template>
@@ -91,3 +90,8 @@
         }
     };
 </script>
+<!--<script type="text/javascript">
+    $(document).ready(function(){
+        loader();
+    });
+</script>-->
