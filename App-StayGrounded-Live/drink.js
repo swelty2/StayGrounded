@@ -14,6 +14,9 @@ $(document).ready(function(){
 
         
       } );
+      $( function() {
+        $( "#selectable" ).selectable();
+      } );
 
       
     dragAndDrop();
