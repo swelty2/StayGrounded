@@ -110,7 +110,14 @@
             </div>
             <div class="brew-content" id="brew-content">
                 <h1>Your Drink!</h1>
-
+                <div class="p5">
+                    <p id="brewing-text"></p>
+                    <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
+                    <div id="handle" class="vue"></div>
+                </div>
+                
+                
+                
                 <div class="drink-area">
                     <div id="cup" class="hidden"></div>
                     <div id="handle" class="hidden"></div>
@@ -134,14 +141,52 @@
 </template>
 
 <script>
-    import brew from './brew'
     export default {
         name: "p5-example",
         components: {
-            brew
+            "vue-p5": VueP5
         },
         data: () => ({
-        })
+            yoff : 0,
+            xoff : 0,
+            width : 400,
+            height : 400,
+        }),
+        methods: {
+            sketch(sketch) {
+                sketch.draw = () => {
+                    sketch.background(255);
+                    
+                    sketch.fill("#6f4e37");
+                    
+                };
+            },
+            setup(sketch) {
+                sketch.createCanvas(this.width, this.height);
+                
+            },
+            draw(sketch) {
+                this.xoff = this.yoff;
+                
+                sketch.beginShape();
+                // Iterate over horizontal pixels
+                for (let x = 0; x <= this.width; x += 10) {
+                    // Calculate a y value according to noise, map to
+                    // 2D Noise
+                    let y = sketch.map(sketch.noise(this.xoff, this.yoff), 0, 1,5,50);
+                    // Set the vertex
+                    sketch.vertex(x, y);
+                    // Increment x dimension for noise
+                    this.xoff += 0.01;
+                }
+                // increment y dimension for noise
+                this.yoff += 0.01;
+                sketch.vertex(this.width, this.height);
+                sketch.vertex(0, this.height);
+                
+                sketch.endShape(sketch.CLOSE);
+            }
+        }
     };
 </script>
 

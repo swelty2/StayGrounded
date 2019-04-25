@@ -23,7 +23,7 @@
         name: "p5-example",
         components: {
             "vue-p5": VueP5
-        },
+        }/*
         data: () => ({
             yoff : 0.1,
             xoff : 0.1,
@@ -54,7 +54,7 @@
                     sketch.line(x, sketch.mouseY+noiseVal*100, x, sketch.height);
                 }
                 //Changes color
-               /* let barWidth = 0.2 ;
+                let barWidth = 0.2 ;
                 let lastBar = -1;
                 sketch.colorMode(sketch.HSB,this.width,this.height,40);
                 let whichBar = sketch.mouseX / barWidth;
@@ -62,13 +62,13 @@
                     let barX = whichBar * barWidth;
                     sketch.fill(barX, sketch.mouseY, 10);
                     lastBar = whichBar;
-                }*/
+                }
                 sketch.beginShape();
                 // Iterate over horizontal pixels
                 for (let x = 2; x <= this.width; x += 3) {
                     // Calculate a y value according to noise, map to
                     // 2D Noise
-                    let y = sketch.map(sketch.noise(this.xoff, this.yoff), 1, 3,160,220);
+                    let y = map(sketch.noise(this.xoff, this.yoff), 1, 3,160,220);
                     // Set the vertex
                     sketch.vertex(x, y);
                     // Increment x dimension for noise
@@ -80,6 +80,6 @@
                 sketch.vertex(0, this.drinkHeight);
                 sketch.endShape(sketch.CLOSE);
             }
-        }
+        }*/
     };
 </script>

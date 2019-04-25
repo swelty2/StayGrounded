@@ -26,8 +26,21 @@
   </div>
 </template>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+
 
 <script>
+function setup() {
+  let canvas = createCanvas(600, 400);
+  canvas.parent('#canvas');
+}
+
+function draw() {
+	background(102);
+  ellipse(50, 50, 80, 80);
+}
   import VueP5 from "vue-p5";
   import coffeeChart from '../components/coffee-chart'
   import teaChart from '../components/tea-chart'
@@ -55,26 +68,38 @@
         sketch.createCanvas(this.width, this.height);
         sketch.fill(255);
         sketch.stroke(200);
+        background(51);
       },
       draw(sketch) {
-        sketch.beginShape();
-        let c = sketch.color('brown');
-        sketch.fill(c);
+        
+
+        fill(255);
+        // We are going to draw a polygon out of the wave points
+        beginShape();
+
+        let xoff = 0; // Option #1: 2D Noise
+        // let xoff = yoff; // Option #2: 1D Noise
+
         // Iterate over horizontal pixels
-        for (let x = 0; x <= this.width; x += 10) {
+        for (let x = 0; x <= width; x += 10) {
           // Calculate a y value according to noise, map to
-          // 2D Noise
-          let y = sketch.map(sketch.noise(this.xoff, this.yoff), 0, 1, 100,200);
+
+          // Option #1: 2D Noise
+          let y = map(noise(xoff, yoff), 0, 1, 200, 300);
+
+          // Option #2: 1D Noise
+          // let y = map(noise(xoff), 0, 1, 200,300);
+
           // Set the vertex
-          sketch.vertex(x, y);
+          vertex(x, y);
           // Increment x dimension for noise
-          this.xoff += 0.05;
+          xoff += 0.05;
         }
         // increment y dimension for noise
-        this.yoff += 0.01;
-        sketch.vertex(this.width, this.height);
-        sketch.vertex(0, this.height);
-        sketch.endShape(sketch.CLOSE);
+        yoff += 0.01;
+        vertex(width, height);
+        vertex(0, height);
+        endShape(CLOSE);
       }
     }
   };
