@@ -1,21 +1,19 @@
 <template>
     <b-container fluid>
+       
+       
         <!-- NAVBAR -->
-        <nav>
-            <ul>
-
-                <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
-                <li><a><router-link to="/brew">Brewmaker 1.0</router-link></a></li>
-                <li><a><router-link to="/lexbot" class="active">Voice Order</router-link></a></li>
-                <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
-                <li><a><router-link to="/data">Fun Facts</router-link></a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a role="navigation"><router-link to="/home/">Home</router-link></a></li>
+            <li><a role="navigation"><router-link to="/buildDrink">Brewmaker 1.0</router-link></a></li>
+            <li><a role="navigation"><router-link to="/lexbot" class="active">Voice Order</router-link></a></li>
+            <li><a role="navigation"><router-link to="/menu">Explore Drinks</router-link></a></li>
+            <li><a role="navigation"><router-link to="/data">Fun Facts</router-link></a></li>
+        </ul>
+    </nav>
 
         <div id= 'centerContainer'>
-
-
-
 
             <div id="centerContent">
                 <h1>Coffee Bot</h1>
