@@ -81,7 +81,7 @@ html, body{
     color:#007bff;
   }
   #design-content a:hover{
-    color:white;
+    color:white !important;
   }
   #explore {
   margin-top:50px;
@@ -699,7 +699,7 @@ html, body{
   }
   
   #design-content .btn a {
-      color: saddlebrown;
+      color: black;
       /* padding-top: 10px; */
       display: inline-block;
   }
@@ -1045,10 +1045,30 @@ html, body{
   /*------------------ SELECTABLE --------------*/
   #selectable .ui-selecting { background: #5c4033; color:white;}
   #selectable .ui-selected { background: #5c4033; color: white; }
-  #selectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+  #selectable { list-style-type: none; margin: 0 auto; padding: 0; width: 100%; max-width: 250px; text-align:left; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 50px; }
   #selectable:hover{
     cursor:pointer;
+  }
+
+  .brew-content button{
+        padding:10px;
+        background-color: #5c4033;
+        border-radius:3px;
+        border: 1px solid black;
+        text-decoration: none !important;
+        margin-top:50px;
+  }
+  .brew-content button h2{
+      
+      text-decoration: none;
+      color: white;
+  }
+  .brew-content button a{
+      text-decoration: none;
+  }
+  .brew-content button:hover{
+    background-color:#8b4513;
   }
   
   
