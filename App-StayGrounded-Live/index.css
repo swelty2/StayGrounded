@@ -599,97 +599,101 @@ html, body{
       margin-top: 30px;
       margin-bottom: 30px;
   }
-  
-  /* LexBot */
-  
   .centerContent h1 {
-      z-index: 100;
+    z-index: 100;
   }
-  
+
   div#lexBot {
-      width: 70%;
-      background-color: #ffffff;
-      /*background-image: url("/src/assets/ipad.png");*/
-      background-image: url("/src/assets/red-robot-l.gif");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      height: 600px;
+    width: 70%;
+    background-color: #ffffff;
+    /*background-image: url('./assets/ipad.png');*/
+    background-image: url('src/assets/red-robot-3.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75%;
+    height: 100%;
+    min-width: 674px;
+    max-width: 674px;
   }
-  
+
   div#botTitle {
-      margin: 0px !important;
-      padding: 0px !important;
-      /* width: inherit; */
-      margin: 0 auto !important;
-      margin-top: 9% !important;
-      z-index: 100;
+    margin: 0px !important;
+    padding: 0px !important;
+    /* width: inherit; */
+    margin: 0 auto !important;
+    margin-top: 9% !important;
+    z-index: 100;
   }
-  
+
   div#botTitle h1 {
-      margin: 0px !important;
-      padding: 0px !important;
-      /*white-space: nowrap; */
+    margin: 0px !important;
+    padding: 0px !important;
+    /*white-space: nowrap; */
   }
-  
+
   div#robot {
-      /*position: absolute;
-      top: 25%;
-      left: 32%;*/
-      z-index: 0;
-      margin-top: -100px !important;
+    /*position: absolute;
+    top: 25%;
+    left: 32%;*/
+    z-index: 0;
+    margin-top: -100px !important;
   }
-  
+
   div#robot img {
-      margin: -76px auto;
-      width: 70%;
-      height: 10%;
+    margin: -76px auto;
+    width: 70%;
+    height: 10%;
   }
-  
+
   .audio-control2 {
-      margin-top: 60% !important;
+    margin-top: 92% !important;
+    font-size: 16pt;
   }
-  
-  .audio-control3 {
+
+  /*.audio-control3 {
       position: relative;
       top: -20%;
+  }*/
+
+  .audio-control3 {
+    margin-top: 210% !important;
   }
-  
+
   .jumbotron {
-      background-color: #fdfdf7 !important;
+    background-color: #fdfdf7 !important;
   }
-  
+
   p.lexError {
-  background-color:#f77;
-  border-radius:4px;
-  float:right;
-  margin:4px;
-  max-width:85%;
-  min-width:50%;
-  padding:4px 10px;
-  text-align:right;
+    background-color:#f77;
+    border-radius:4px;
+    float:right;
+    margin:4px;
+    max-width:85%;
+    min-width:50%;
+    padding:4px 10px;
+    text-align:right;
   }
-  
+
   p.lexResponse {
-  background-color:#bbf;
-  border-radius:4px;
-  float:right;
-  font-style:italic;
-  margin:4px;
-  max-width:85%;
-  min-width:50%;
-  padding:4px 10px;
-  text-align:right;
+    background-color:#bbf;
+    border-radius:4px;
+    float:right;
+    font-style:italic;
+    margin:4px;
+    max-width:85%;
+    min-width:50%;
+    padding:4px 10px;
+    text-align:right;
   }
-  
+
   p.userRequest {
-  background-color:#7d7;
-  border-radius:4px;
-  float:left;
-  margin:4px;
-  max-width:85%;
-  min-width:50%;
-  padding:4px 10px;
+    background-color:#7d7;
+    border-radius:4px;
+    float:left;
+    margin:4px;
+    max-width:85%;
+    min-width:50%;
+    padding:4px 10px;
   }
   
   /* Explore */
