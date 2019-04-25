@@ -6,10 +6,11 @@
     <nav>
       <ul>
 
-        <li><a><router-link to="/home/Donna">Home</router-link></a></li>
-        <li><a><router-link to="/data" class="active"> Data</router-link></a></li>
-        <li><a><router-link to="/builddrink">Brew A Cup</router-link></a></li>
+        <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
+        <li><a><router-link to="/brew">Brewmaker 1.0</router-link></a></li>
         <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
+        <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
+        <li><a><router-link to="/data">Fun Facts</router-link></a></li>
       </ul>
     </nav>
 

@@ -36,18 +36,12 @@
     <br/>
 
     <div class="content-row" id="login-info">
-      <form >
 
-
-        <label class="sr-only">User Name</label>
-        <input v-model="userName" class="form-control" id="userName" placeholder="Enter Your Name">
-
-      </form>
 
 
     </div>
     <div class="content-row" id="explore">
-      <router-link class="explore-button"  to="/home/Donna">Click to Explore</router-link>
+      <router-link class="explore-button"  to="/home">Click to Explore</router-link>
     </div>
     </div>
   </b-container>

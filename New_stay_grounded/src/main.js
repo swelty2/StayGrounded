@@ -12,7 +12,8 @@ import brew from './components/brew'
 import design from './components/design'
 import data from './components/data'
 import lexbot from './components/lexbot'
-
+import BListGroup from 'bootstrap-vue/es/components/list-group/list-group'
+Vue.component('b-list-group', BListGroup)
 
 Vue.use(Router);
 Vue.component('apexchart', VueApexCharts);

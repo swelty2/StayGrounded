@@ -4,52 +4,63 @@
     <nav>
         <ul>
 
-            <li><a><router-link to="/home/">Home</router-link></a></li>
-            <li><a><router-link to="/data"> Data</router-link></a></li>
-            <li><a><router-link to="/builddrink">Brew A Cup</router-link></a></li>
-            <li><a><router-link to="/lexbot" class="active">Voice Order</router-link></a></li>
+            <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
+            <li><a><router-link to="/brew">Brewmaker 1.0</router-link></a></li>
+            <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
+            <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
+            <li><a><router-link to="/data">Fun Facts</router-link></a></li>
         </ul>
     </nav>
 
     <div id= 'centerContainer'>
 
+
+
+
         <div id="centerContent">
-            <b-row>
+            <h1>Coffee Bot</h1>
+            <div id="lexBot">
+                <b-row>
 
-                <b-col md="3">
-                    <div class="audio-control1">
-                        <h1>Speak</h1>
-                        <img id="audio-control" class="white-circle"src="../assets/microphone.png">
+                    <b-col md="3" id="botTitle">
+                        <div class="audio-control1">
+                            <h1 hidden>Coffee Bot</h1>
 
-                    </div>
-                </b-col>
+                            <div>
+                                <input type="text" id="BOT" name="BOT" placeholder="BOT" value="CoffeeOrderingBot" hidden/>
+                            </div>
 
-
-                <b-col md="3">
-                    <div class="audio-control2">
-                        <h1>Status</h1>
-
-                        <div><span id="message">
-
-                        </span></div>
-
-
-                    </div>
-                </b-col>
-                <b-col md="3">
-                    <div class="audio-control3">
-                        <h1>Bot</h1>
-
-                        <div>
-                            <input type="text" id="BOT" name="BOT" placeholder="BOT" value="CoffeeOrderingBot"/>
                         </div>
+                    </b-col>
+                </b-row>
+                <b-row>
+                    <b-col md="3">
+                        <div class="audio-control3">
 
-                    </div>
-                </b-col>
+                            <!--<h1>Speak</h1>-->
+                            <img id="audio-control" class="white-circle"src="../assets/microphone.png">
+
+                        </div>
+                    </b-col>
+
+
+                </b-row>
+                <b-row>
+
+                    <b-col md="3">
+                        <div class="audio-control2">
+                            <span>Status:</span><span id="message">
+
+                            </span>
 
 
 
-            </b-row>
+                        </div>
+                    </b-col>
+                </b-row>
+                <b-row md="3" id="robot"><img src="../assets/red-robot-l.gif"/> </b-row>
+
+            </div>
             <canvas class="visualizer"></canvas>
 
         </div>
@@ -60,7 +71,4 @@
 
 
 </template>
-
-
-
 

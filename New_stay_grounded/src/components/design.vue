@@ -3,21 +3,22 @@
         <!-- NAVBAR -->
         <nav>
             <ul>
-                <li><a><router-link to="/home/Donna">Home</router-link></a></li>
-                <li><a><router-link to="/data"> Data</router-link></a></li>
-                <li><a><router-link to="/builddrink" class="active">Brew A Cup</router-link></a></li>
+                <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
+                <li><a><router-link to="/brew">Brewmaker 1.0</router-link></a></li>
                 <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
+                <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
+                <li><a><router-link to="/data">Fun Facts</router-link></a></li>
             </ul>
         </nav>
         
         <div id="centerContainer">
             <div id="design-content">
-                <h1>What do you want to brew?</h1>
+                <h1>Explore Drinks</h1>
                 <!-- BEAN DATA -->
                 <div class="btn btn-outline-danger option" role="button">
                     <a href="#recipe-content">        
-                    <img src="../assets/list.png">
-                    <h2>Choose Recipe</h2>
+                    <img src="../assets/mocha-latte.jpg">
+                    <h2>Latte</h2>
                     </a>
                  </div> 
                 

@@ -1,115 +1,133 @@
+
 <template>
-  <b-container>
+  <b-container fluid>
+    <!-- NAVBAR -->
     <nav>
       <ul>
-
-        <li><a><router-link to="/home/Donna">Home</router-link></a></li>
-        <li><a><router-link to="/data"> Data</router-link></a></li>
-        <li><a><router-link to="/menu">Brew A Cup</router-link></a></li>
-        <li><a><router-link to="/speechform">Voice Order</router-link></a></li>
+        <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
+        <li><a><router-link to="/brew">Brewmaker 1.0</router-link></a></li>
+        <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
+        <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
+        <li><a><router-link to="/data">Fun Facts</router-link></a></li>
       </ul>
     </nav>
-    <div>
-      <h2><b-badge>Recipes</b-badge></h2>
-      <hr class="mt-2 mb-5">
+
+    <div id="centerContainer">
+      <div id="design-content">
+        <h1>Explore Drinks</h1>
+        <!-- BEAN DATA -->
+        <div class="btn btn-outline-danger option" role="button">
+          <a href="#latte-content">
+            <img src="../assets/latte-2.jpg">
+            <h2>Latte</h2>
+            <p class="drinkDesc">Lorem ipsum</p>
+          </a>
+        </div>
+
+        <!-- BUILD A DRINK -->
+        <div class="btn btn-outline-success option" role="button">
+          <a href="#americono-content">
+            <img src="../assets/americano-2.jpg">
+            <h2>Americano</h2>
+            <p class="drinkDesc">Lorem ipsum</p>
+          </a>
+        </div>
+
+        <div class="btn btn-outline-primary option" role="button">
+          <a href="#green-content">
+            <img src="../assets/green-tea-2.jpg">
+            <h2>Green Tea</h2>
+            <p class="drinkDesc">Lorem ipsum</p>
+          </a>
+        </div>
+        <!-- LEXBOT -->
+        <div class="btn btn-outline-primary option" role="button">
+          <a href="#hot-content">
+            <img src="../assets/hot-chocolate-2.jpg">
+            <h2>Hot Chocolate</h2>
+            <p class="drinkDesc">Lorem ipsum</p>
+          </a>
+        </div>
+
+
+       <!-- <div class="content-row">
+          <router-link class="brew-button" to="/brew" >Brew my Drink</router-link>
+        </div> -->
+      </div>
+
+      <div class="brew-content" id="latte-content">
+        <h1>Latte</h1>
+        <div>
+          <b-table striped hover :items="latte"></b-table>
+<img id="menuImages" thumbnail fluid src="../assets/latteNutr.png">
+        </div>
+      </div>
+
+
+      <div class="brew-content" id="americono-content">
+        <h1>Americono</h1>
+        <div>
+          <b-table striped hover :items="americono"></b-table>
+          <img id="menuImages" thumbnail fluid src="../assets/americanoNutr.png">
+
+        </div>
+
+      </div>
+
+
+      <div class="brew-content" id="green-content">
+        <h1>Green Tea</h1>
+        <div>
+          <b-table striped hover :items="green"></b-table>
+          <img id="menuImages" thumbnail fluid src="../assets/greenNutr.png">
+
+        </div>
+      </div>
+
+
+      <div class="brew-content" id="hot-content">
+        <h1>Hot Chocolate</h1>
+        <div>
+          <b-table striped hover :items="hotChocolate"></b-table>
+          <img id="menuImages" thumbnail fluid src="../assets/hotchocNutr.png">
+
+        </div>
+      </div>
+
+
     </div>
 
-    <div>
-      <b-row>
-        <!-- Item 1 -->
-        <b-col lg="3" md="4" cols="6">
-            <b-link href="#" >
-              <b-img class="img-fluid img-thumbnail" :src="require('../assets/aroma-aromatic-art-434213.jpg')" alt=""></b-img>
-              <router-link to="/brew/Cappuccino" class="figure-caption text-center">Cappuccino</router-link>
-            </b-link>
-        </b-col>
-        <!-- Item 2 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/mocha-latte.jpg')" alt=""></b-img>
-            <router-link to="/brew/MochaLatte" class="figure-caption text-center">Mocha Latte</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 3 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/mexican-hot-chocolate-recipe.jpg')" alt=""></b-img>
-            <router-link to="/brew/HotChocolate" class="figure-caption text-center">Hot Chocolate</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 4 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/americano.jpg')" alt=""></b-img>
-            <router-link to="/brew/Americano" class="figure-caption text-center">Americano</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 5 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/chai-latte.jpg')" alt=""></b-img>
-            <router-link to="/brew/ChaiLatte" class="figure-caption text-center">Chai Latte</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 6 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/green-tea.png')" alt=""></b-img>
-            <router-link to="/brew/GreenTeaLatte" class="figure-caption text-center">Green Tea Latte</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 7 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/herbal-tea.jpg')" alt=""></b-img>
-            <router-link to="/brew/HerbalTea" class="figure-caption text-center">Herbal Tea</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 8 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/herbal-mint-tea.jpg')" alt=""></b-img>
-            <router-link to="/brew/MintTea" class="figure-caption text-center">Mint Tea</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 9 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/lemonade.jpg')" alt=""></b-img>
-            <router-link to="/brew/Lemonade" class="figure-caption text-center">Lemonade</router-link>
-          </b-link>
-        </b-col>
-        <!-- Item 10 -->
-        <b-col lg="3" md="4" cols="6">
-          <b-link href="#" >
-            <b-img class="img-fluid img-thumbnail" :src="require('../assets/fresh-smoothies.jpg')" alt=""></b-img>
-            <router-link to="/brew/Smoothies" class="figure-caption text-center">Seasoned Smoothies</router-link>
-          </b-link>
-        </b-col>
-      </b-row>
-    </div>
   </b-container>
-  <!-- Page Content -->
-
 </template>
 
 <script>
-  import menu from '../data/menu'
     export default {
-        name: "coffee-menu",
         data() {
-          return {
-            title: "Recipe Index",
-            drinks: {}
-          }
-        },
-        created() {
-          this.drinks = menu;
-          console.log('The drink list are : ', this.drinks.length);
+            return {
+                latte: [
+                    { Expresso: "1 shot", Creamer: "2oz", Nutrition:  '<img src="../assets/latteInfo.png">'}
+
+                ],
+                americono: [
+                    { Expresso: "1 shot", Creamer: "2oz",  HotWater: 1, SugarCube: 1, Calories: 50, Carbs: 14, Sugar: 18}
+
+                ],
+                green: [
+                    { MatchaPowder: "1 tsp", HotWater: "6oz" }
+
+                ],
+                hotChocolate: [
+                    { CocoaPowder: "2 tsp", Milk: "1cup",  Sugar: "2 tsp " }
+
+                ]
+
+            }
         }
     }
 </script>
+<style scoped>
 
+</style>
 <style scoped>
 
 </style>
