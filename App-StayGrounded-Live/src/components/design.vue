@@ -1,30 +1,32 @@
+
 <template>
     <b-container fluid>
-        <!-- NAVBAR -->
+
         <!-- NAVBAR -->
         <nav>
             <ul>
-                <li><a><router-link to="/home/" class="active">Home</router-link></a></li>
-                <li><a><router-link to="/builddrink" class="active"> Brewmaker 1.0</router-link></a></li>
-                <li><a><router-link to="/lexbot">Voice Order</router-link></a></li>
-                <li><a><router-link to="/menu">Explore Drinks</router-link></a></li>
-                <li><a><router-link to="/data">Fun Facts</router-link></a></li>
+                <li><a role="navigation"><router-link to="/home/">Home</router-link></a></li>
+                <li><a role="navigation"><router-link to="/buildDrink" class="active">Brewmaker 1.0</router-link></a></li>
+                <li><a role="navigation"><router-link to="/lexbot">Voice Order</router-link></a></li>
+                <li><a role="navigation"><router-link to="/menu">Explore Drinks</router-link></a></li>
+                <li><a role="navigation"><router-link to="/data">Fun Facts</router-link></a></li>
             </ul>
         </nav>
+        
         
         <div id="centerContainer">
             <div id="design-content">
                 <h1>Do you want to choose a recipe or create a custom cup?</h1>
                 <!-- BEAN DATA -->
-                <div class="btn btn-outline-danger option" role="button">
-                    <a href="#recipe-content">
+                <div class="btn btn-outline-danger option" role="button" aria-pressed="false">
+                    <a href="#recipe-content">        
                     <img src="../assets/list.png">
                     <h2>Choose Recipe</h2>
                     </a>
-                 </div>
+                 </div> 
                 
                 <!-- BUILD A DRINK -->  
-                <div class="btn btn-outline-success option" role="button">
+                <div class="btn btn-outline-success option" role="button" aria-pressed="false">
                     <a href="#build-content">
                     <img src="../assets/cup.png">
                     <h2>Custom Cup</h2>
@@ -32,13 +34,15 @@
                  </div> 
 
             </div>
+            <hr>
 
             <!-- RECIPE CONTENT -->
             <div class="brew-content" id="recipe-content">
+                <h2>Choose a Drink Recipe</h2>
                 <div id="recipe-menu">
                     <ol id="selectable">
                         <li class="ui-widget-content" value="latte">Latte</li>
-                        <li class="ui-widget-content" value="mocha-latte">Moacha Latte</li>
+                        <li class="ui-widget-content" value="mocha-latte">Mocha Latte</li>
                         <li class="ui-widget-content" value="iced-coffee">Iced Coffee</li>
                         <li class="ui-widget-content" value="coffee">Coffee</li>
                         <li class="ui-widget-content" value="green-tea">Green Tea</li>
@@ -47,8 +51,16 @@
                         <li class="ui-widget-content" value="iced-green-tea">Iced Green Tea</li>
                         <li class="ui-widget-content" value="iced-black-tea">Iced Black Tea</li>
                     </ol>
+                    <button role="button" aria-pressed="false">
+                        <a href="#brew-content">
+                            <h2>Brew My Drink!</h2>
+                        </a>
+                    </button>
                 </div>    
             </div>
+            <hr>
+    
+                
 
             <!-- CUSTOM CUP CONTENT -->
             <div class="brew-content" id="build-content">
@@ -91,9 +103,10 @@
                         <div class="option cream" id="milkType"><p>Half and Half</p></div>
 
                         <!-- BREW BUTTON -->
-                        <button><a href="#brew-content">
-                            <h2>Brew My Drink!</h2>
-                        </a>
+                        <button role="button" aria-pressed="false">
+                            <a href="#brew-content">
+                                <h2>Brew My Drink!</h2>
+                            </a>
                         </button>
                     </div>
                     <div class="right">
@@ -109,12 +122,13 @@
                     
                 </div>
             </div>
+            <hr>
             <div class="brew-content" id="brew-content">
                 <h1>Your Drink!</h1>
                 <div class="p5">
                     <p id="brewing-text"></p>
                     <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
-                   <!-- <div id="handle" class="vue"></div> -->
+                    <div id="handle" class="vue"></div>
                 </div>
                 
                 
@@ -167,8 +181,18 @@
                 
             },
             draw(sketch) {
-                this.xoff = this.yoff;
                 
+                this.xoff = 5;
+                //Changes color
+                let barWidth = 0.2 ;
+                let lastBar = -1;
+                sketch.colorMode(sketch.HSB,this.width,this.height,40);
+                let whichBar = sketch.mouseX / barWidth;
+                if (whichBar !== lastBar) {
+                    let barX = whichBar * barWidth;
+                    sketch.fill(barX, sketch.mouseY, 10);
+                    lastBar = whichBar;
+                }
                 sketch.beginShape();
                 // Iterate over horizontal pixels
                 for (let x = 0; x <= this.width; x += 10) {
