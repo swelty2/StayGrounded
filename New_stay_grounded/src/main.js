@@ -1,7 +1,11 @@
 
 import Vue from 'vue'
+
 import Router from 'vue-router'
 import BootStrapVue from 'bootstrap-vue'
+
+import 'jquery-ui-dist/jquery-ui'
+
 import VueApexCharts from 'vue-apexcharts'
 
 import App from './App'
@@ -13,6 +17,12 @@ import design from './components/design'
 import data from './components/data'
 import lexbot from './components/lexbot'
 import BListGroup from 'bootstrap-vue/es/components/list-group/list-group'
+
+require('jquery-ui-dist/jquery-ui');
+
+window.$ = window.jQuery = require('jquery');
+window.$ = $.extend(require('jquery-ui'));
+
 Vue.component('b-list-group', BListGroup)
 
 Vue.use(Router);
